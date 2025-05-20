@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" 
+    href="img/Logo.png style=width: 100%; height: 85px;"">
+    <title>Cimory Dairyland Puncak & Riverside - Wisata Alam & Edukasi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/Logo.png" alt="Cimory Logo" style="width: 100%; height: 85px;">
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home" class="active">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#gallery">Galeri</a></li>
+                    <li><a href="#tickets">Tiket</a></li>
+                    <li><a href="#location">Lokasi</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                    <li><a href="#reservation" class="btn-nav">Reservasi</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+
+            <a href="#about" class="btn-primary">Jelajahi Sekarang</a>
+
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tentang Cimory</h2>
+                <p>Destinasi wisata keluarga yang menyenangkan dan edukatif</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-item">
+                    <div class="about-img">
+                        <img src="img/about.png" alt="Cimory Dairyland">
+                    </div>
+                    <div class="about-text">
+                        <h3>Cimory Dairyland Puncak</h3>
+                        <p>Cimory Dairyland Puncak merupakan destinasi wisata edukasi yang terletak di kawasan Puncak,
+                            Bogor. Tempat ini menawarkan pengalaman belajar tentang proses pembuatan susu dan produk
+                            turunannya secara langsung. Pengunjung dapat melihat peternakan sapi perah, proses
+                            pengolahan susu, dan berbagai wahana edukatif lainnya.</p>
+                        <p>Didirikan pada tahun 2008, Cimory Dairyland telah menjadi tujuan favorit wisata keluarga yang
+                            ingin memberikan pengalaman edukatif sekaligus rekreasi bagi anak-anak dan orang dewasa.</p>
+                        <h4>Daya Tarik:</h4>
+                        <ul>
+                            <li>Peternakan sapi perah</li>
+                            <li>Pabrik pengolahan susu</li>
+                            <li>Area bermain anak</li>
+                            <li>Restoran dengan pemandangan indah</li>
+                            <li>Toko oleh-oleh produk susu</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-item reverse">
+                    <div class="about-img">
+                        <img src="img/about2.png" alt="Cimory Riverside">
+                    </div>
+                    <div class="about-text">
+                        <h3>Cimory Riverside</h3>
+                        <p>Cimory Riverside adalah cabang dari Cimory yang berlokasi di tepi sungai dengan suasana yang
+                            lebih sejuk dan asri. Tempat ini menawarkan pengalaman bersantai sambil menikmati hidangan
+                            lezat dengan pemandangan sungai yang mengalir.</p>
+                        <p>Dibuka pada tahun 2015, Cimory Riverside menjadi alternatif bagi pengunjung yang ingin
+                            menikmati suasana alam yang lebih tenang namun tetap bisa menikmati produk-produk Cimory
+                            yang berkualitas.</p>
+                        <h4>Daya Tarik:</h4>
+                        <ul>
+                            <li>Restoran dengan pemandangan sungai</li>
+                            <li>Area piknik keluarga</li>
+                            <li>Spot foto instagramable</li>
+                            <li>Toko oleh-oleh produk Cimory</li>
+                            <li>Suasana alam yang sejuk dan asri</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: white;">Galeri Foto</h2>
+                <p>Keseruan dan keindahan Cimory dalam jepretan kamera</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('img/peternakan.png')">
+                    <img src="img/peternakan.png" alt="Peternakan Sapi">
+                    <div class="gallery-overlay">
+                        <span>Peternakan Sapi</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('img/pemeresan.png ') ">
+                    <img src="img/pemeresan.png" alt="Proses Pembuatan Susu">
+                    <div class="gallery-overlay">
+                        <span>Proses Pembuatan Susu</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('img/restoran.png')">
+                    <img src="img/restoran.png" alt="Restoran Cimory">
+                    <div class="gallery-overlay">
+                        <span>Restoran Cimory</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('img/taman.png')">
+                    <img src="img/taman.png" alt="Area Bermain Anak">
+                    <div class="gallery-overlay">
+                        <span>Area Bermain Anak</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('img/pemandang.png')">
+                    <img src="img/pemandang.png" alt="Pemandangan Riverside">
+                    <div class="gallery-overlay">
+                        <span>Pemandangan Riverside</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('img/produk.jpg')">
+                    <img src="img/produk.jpg" alt="Produk Cimory">
+                    <div class="gallery-overlay">
+                        <span>Produk Cimory</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="/placeholder.svg" alt="Lightbox Image">
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section id="tickets" class="tickets">
+        <div class="container">
+            <div class="section-header">
+                <h2>Harga Tiket & Jam Operasional</h2>
+                <p>Informasi lengkap untuk merencanakan kunjungan Anda</p>
+            </div>
+
+            <div class="tickets-content">
+                <div class="ticket-tables">
+                    <div class="ticket-table">
+                        <h3>Cimory Dairyland Puncak</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Kategori</th>
+                                    <th>Weekday</th>
+                                    <th>Weekend/Libur</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Dewasa</td>
+                                    <td>Rp 25.000</td>
+                                    <td>Rp 35.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Anak (3-12 tahun)</td>
+                                    <td>Rp 15.000</td>
+                                    <td>Rp 25.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Paket Keluarga (2 dewasa + 2 anak)</td>
+                                    <td>Rp 70.000</td>
+                                    <td>Rp 100.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Rombongan (min. 20 orang)</td>
+                                    <td>Rp 20.000/orang</td>
+                                    <td>Rp 30.000/orang</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="ticket-table">
+                        <h3>Cimory Riverside</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Kategori</th>
+                                    <th>Weekday</th>
+                                    <th>Weekend/Libur</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Dewasa</td>
+                                    <td>Rp 20.000</td>
+                                    <td>Rp 30.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Anak (3-12 tahun)</td>
+                                    <td>Rp 10.000</td>
+                                    <td>Rp 20.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Paket Keluarga (2 dewasa + 2 anak)</td>
+                                    <td>Rp 50.000</td>
+                                    <td>Rp 80.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Rombongan (min. 20 orang)</td>
+                                    <td>Rp 15.000/orang</td>
+                                    <td>Rp 25.000/orang</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="operation-hours">
+                    <h3>Jam Operasional</h3>
+                    <div class="hours-container">
+                        <div class="hours-item">
+                            <h4>Cimory Dairyland Puncak</h4>
+                            <ul>
+                                <li><strong>Senin - Jumat:</strong> 08:00 - 17:00 WIB</li>
+                                <li><strong>Sabtu - Minggu:</strong> 08:00 - 18:00 WIB</li>
+                                <li><strong>Hari Libur Nasional:</strong> 08:00 - 18:00 WIB</li>
+                            </ul>
+                        </div>
+                        <div class="hours-item">
+                            <h4>Cimory Riverside</h4>
+                            <ul>
+                                <li><strong>Senin - Jumat:</strong> 09:00 - 18:00 WIB</li>
+                                <li><strong>Sabtu - Minggu:</strong> 08:00 - 19:00 WIB</li>
+                                <li><strong>Hari Libur Nasional:</strong> 08:00 - 19:00 WIB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promo-section">
+                    <h3>Promo Spesial</h3>
+                    <p>Dapatkan diskon dan penawaran spesial untuk kunjungan Anda!</p>
+                    <button class="btn-secondary" onclick="showPromo()">Lihat Promo</button>
+
+                    <!-- Promo Modal -->
+                    <div id="promoModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close-modal" onclick="closePromo()">&times;</span>
+                            <h3>Promo Spesial Cimory</h3>
+                            <div class="promo-list">
+                                <div class="promo-item">
+                                    <h4>Promo Ulang Tahun</h4>
+                                    <p>Gratis tiket masuk untuk yang berulang tahun (dengan min. 3 orang pembayar)</p>
+                                    <p class="promo-period">Berlaku sepanjang tahun</p>
+                                </div>
+                                <div class="promo-item">
+                                    <h4>Promo Weekday</h4>
+                                    <p>Diskon 20% untuk tiket masuk pada hari Senin-Kamis (non-libur)</p>
+                                    <p class="promo-period">Berlaku hingga 31 Desember 2023</p>
+                                </div>
+                                <div class="promo-item">
+                                    <h4>Promo Pelajar</h4>
+                                    <p>Diskon 15% untuk pelajar dan mahasiswa dengan menunjukkan kartu identitas</p>
+                                    <p class="promo-period">Berlaku sepanjang tahun</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2>Peta Lokasi</h2>
+                <p>Temukan kami dengan mudah</p>
+            </div>
+
+            <div class="location-content">
+                <div class="location-item">
+                    <h3>Cimory Dairyland Puncak</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Raya Puncak Gadog No.KM 77, Leuwimalang, Kec. Cisarua,
+                        Kabupaten Bogor, Jawa Barat 16750</p>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.9590427329013!2d106.90005317401334!3d-6.651998965026656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c9dcb1ad0da5%3A0xff249a493c3af939!2sCIMORY%20DAIRYLAND!5e0!3m2!1sid!2sid!4v1747662776886!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <a href="https://maps.app.goo.gl/bsRjGanQPGZtK4sYA" target="_blank" class="btn-map">Buka di Google Maps</a>
+                </div>
+
+                <div class="location-item">
+                    <h3>Cimory Riverside</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Raya Puncak, Cisarua, Kec. Cisarua, Kabupaten Bogor,
+                        Jawa Barat 16750</p>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15851.824026370461!2d106.89023670926781!3d-6.652375344265371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c9ab0666de3f%3A0x847197b61087fb67!2sDairyland%20Riverside%20Puncak!5e0!3m2!1sid!2sid!4v1747662557335!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <a href="https://maps.app.goo.gl/xn8MDiVDxYf1FG559" target="_blank" class="btn-map">Buka di Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Testimoni Pengunjung</h2>
+                <p>Apa kata mereka tentang pengalaman di Cimory</p>
+            </div>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-container">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>"Pengalaman yang sangat menyenangkan bagi keluarga kami. Anak-anak sangat senang bisa
+                                    melihat langsung proses pembuatan susu dan berinteraksi dengan sapi perah. Makanan
+                                    di restorannya juga enak-enak!"</p>
+                                <div class="testimonial-author">
+                                    <img src="img/budi.png" alt="Budi Santoso">
+                                    <div>
+                                        <h4>Budi Santoso</h4>
+                                        <p>Pengunjung Cimory Dairyland</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p>"Cimory Riverside adalah tempat yang sempurna untuk bersantai sambil menikmati
+                                    pemandangan alam yang indah. Suasananya sejuk dan makanannya lezat. Sangat
+                                    direkomendasikan untuk yang ingin melepas penat dari hiruk pikuk kota."</p>
+                                <div class="testimonial-author">
+                                    <img src="img/siti.png" alt="Siti Nurhaliza">
+                                    <div>
+                                        <h4>Siti Nurhaliza</h4>
+                                        <p>Pengunjung Cimory Riverside</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>"Kami mengadakan kunjungan sekolah ke Cimory Dairyland dan anak-anak sangat antusias.
+                                    Mereka belajar banyak tentang proses pembuatan susu dan produk turunannya. Staf di
+                                    sana juga sangat ramah dan informatif."</p>
+                                <div class="testimonial-author">
+                                    <img src="img/dewi.png" alt="Ibu Dewi">
+                                    <div>
+                                        <h4>Ibu Dewi</h4>
+                                        <p>Guru SD Harapan Bangsa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-controls">
+                    <button id="prevBtn" class="testimonial-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots" id="testimonialDots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button id="nextBtn" class="testimonial-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Reservasi Online</h2>
+                <p>Rencanakan kunjungan Anda dengan mudah</p>
+            </div>
+
+            <div class="reservation-content">
+                <form id="reservationForm" class="reservation-form">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Nomor Telepon</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon Anda" required>
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="location">Lokasi</label>
+                            <select id="location" name="location" required>
+                                <option value="">Pilih Lokasi</option>
+                                <option value="dairyland">Cimory Dairyland Puncak</option>
+                                <option value="riverside">Cimory Riverside</option>
+                            </select>
+                            <span class="error-message" id="locationError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Tanggal Kunjungan</label>
+                            <input type="date" id="date" name="date" required>
+                            <span class="error-message" id="dateError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="adults">Jumlah Dewasa</label>
+                            <input type="number" id="adults" name="adults" min="1" value="1" required>
+                            <span class="error-message" id="adultsError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="children">Jumlah Anak-anak</label>
+                            <input type="number" id="children" name="children" min="0" value="0">
+                            <span class="error-message" id="childrenError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Pesan Tambahan (opsional)</label>
+                        <textarea id="message" name="message"
+                            placeholder="Masukkan pesan atau permintaan khusus Anda"></textarea>
+                    </div>
+
+                    <div class="form-group form-checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Saya menyetujui syarat dan ketentuan yang berlaku</label>
+                        <span class="error-message" id="termsError"></span>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Kirim Reservasi</button>
+                </form>
+
+                <div class="reservation-info">
+                    <h3>Informasi Reservasi</h3>
+                    <p>Untuk pengalaman kunjungan yang lebih nyaman, kami menyarankan untuk melakukan reservasi terlebih
+                        dahulu, terutama untuk kunjungan rombongan atau pada akhir pekan dan hari libur.</p>
+
+                    <div class="reservation-note">
+                        <h4>Catatan Penting:</h4>
+                        <ul>
+                            <li>Reservasi dapat dilakukan minimal 1 hari sebelum kunjungan</li>
+                            <li>Pembayaran dilakukan di tempat pada saat kedatangan</li>
+                            <li>Harap datang 15 menit sebelum waktu kunjungan yang dijadwalkan</li>
+                            <li>Konfirmasi reservasi akan dikirimkan melalui email</li>
+                            <li>Untuk rombongan besar (>20 orang), silakan hubungi kami langsung melalui WhatsApp</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-info">
+                        <h4 style="color: rgb(43, 48, 117);">Hubungi Kami:</h4>
+                        <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                        <p><i class="fas fa-envelope"></i> info@cimory-tourism.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Modal -->
+            <div id="successModal" class="modal">
+                <div class="modal-content success-modal">
+                    <span class="close-modal" onclick="closeSuccessModal()">&times;</span>
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Reservasi Berhasil!</h3>
+                    <p>Terima kasih telah melakukan reservasi di Cimory. Kami telah mengirimkan detail reservasi ke
+                        email Anda.</p>
+                    <p>Silakan cek email Anda untuk informasi lebih lanjut.</p>
+                    <button class="btn-primary" onclick="closeSuccessModal()">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/Logo.png" alt="Cimory Logo">
+                    <p>Wisata alam dan edukasi untuk seluruh keluarga</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Tautan Cepat</h3>
+                        <ul>
+                            <li><a href="#home">Beranda</a></li>
+                            <li><a href="#about">Tentang Kami</a></li>
+                            <li><a href="#gallery">Galeri</a></li>
+                            <li><a href="#tickets">Tiket & Jam Operasional</a></li>
+                            <li><a href="#location">Lokasi</a></li>
+                            <li><a href="#testimonials">Testimoni</a></li>
+                            <li><a href="#reservation">Reservasi</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Lokasi Kami</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Cimory Dairyland Puncak<br>Jl. Raya Puncak Gadog
+                                No.KM 77, Cisarua, Bogor</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Cimory Riverside<br>Jl. Raya Puncak, Cisarua,
+                                Bogor</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Hubungi Kami</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> +62 812-3456-7890</li>
+                            <li><i class="fas fa-envelope"></i> info@cimory-tourism.com</li>
+                            <li><i class="fas fa-clock"></i> Senin - Minggu: 08:00 - 18:00 WIB</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Ikuti Kami</h3>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cimory Tourism. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Peta Situs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/6281234567890" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
